@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Norse';
+    font-weight: bold;
+    src: url("fonts/Norse-Bold.otf") format("opentype");
+}
+
+:root {
+    --logo-font: 'Norse';
+    --button-color: #596D48;
+    --input-border-color: #E5E7EB;
+}
