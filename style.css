@@ -8,6 +8,7 @@
     --logo-font: 'Norse';
     --button-color: #596D48;
     --input-border-color: #E5E7EB;
+    --sidebar-text-color: #d8d8d8;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -18,10 +19,19 @@ body {
     flex: 1;
 }
 
+img {
+    height: 90%;
+    object-fit: contain;
+}
+
+#sidebar a:link, #sidebar a:visited {
+    color: var(--sidebar-text-color);
+}
+
 #sidebar {
     background-image: url(images/halie-west-25xggax4bSA-unsplash.jpg);
     background-size: cover;
-    color: #d8d8d8;
+    color: var(--sidebar-text-color);
     width: 40%;
 }
 
@@ -43,19 +53,83 @@ body {
     background-color: rgba(0,0,0,0.3);
 }
 
-img {
-    height: 90%;
-    object-fit: contain;
-}
-
 #photo-credit {
     text-align: center;
-    color: #d8d8d8;
+    color: var(--sidebar-text-color);
     font-size: 13px;
     position: relative;
     top: 59vh;
 }
 
-a:link, a:visited {
-    color: #d8d8d8;
+#main-content {
+    padding: 15vh 4vw 15vh 3vw;
+}
+
+.text-container {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.form-container {
+    font-weight: bold;
+    font-size: 24px;
+    padding-top: 1vh;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.form-container > p {
+    width: 100%;
+}
+
+input, label {
+    display: block;
+    font-size: 12px;
+    color: #6b6b6b;
+    font-weight: 700;
+    border: var(--input-border-color) 1px solid;
+}
+
+input {
+    padding: 7px;
+    width: 80%;
+    border-radius: 5px;
+}
+
+input:focus {
+    border: 1px solid blue;
+    outline: none;
+    box-shadow: 1px 1px;
+}
+
+input[type=password]:invalid {
+    border: 1px solid red;
+    outline: none;
+}
+
+.sign-up-form {
+    padding: 10px;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+button {
+    color: white;
+    padding: 15px 50px;
+    background-color: var(--button-color);
+    border-radius: 8px;
+    border: 1px var(--input-border-color) solid;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 5% 0;
+}
+
+#log-in-link {
+    font-size: 18px;
+}
+
+#main-content a:link, #main-content a:visited {
+    color: var(--button-color);
+    text-decoration: none;
 }
